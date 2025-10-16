@@ -4,315 +4,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeni Rose Couture - Création & Retouche sur Mesure</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body class="bg-rose-50 text-gray-800">
+<body>
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <a href="index.html" class="text-rose-600 text-2xl font-bold font-serif">Jeni Rose Couture</a>
-                    </div>
-                    <div class="hidden md:block ml-10">
-                        <div class="flex space-x-8">
-                            <a href="index.html" class="nav-link text-gray-700 hover:text-rose-600 font-medium px-3 py-2 text-lg">Accueil</a>
-                            <a href="services.html" class="nav-link text-gray-700 hover:text-rose-600 font-medium px-3 py-2 text-lg">Services</a>
-                            <a href="about.html" class="nav-link text-gray-700 hover:text-rose-600 font-medium px-3 py-2 text-lg">À propos</a>
-                            <a href="contact.html" class="nav-link text-gray-700 hover:text-rose-600 font-medium px-3 py-2 text-lg">Contact</a>
-                            <a href="login.html" class="nav-link text-gray-700 hover:text-rose-600 font-medium px-3 py-2 text-lg">Connexion</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <a href="contact.html#rdv" class="btn-primary">
-                        Prendre RDV
-                    </a>
-                </div>
-                <div class="md:hidden">
-                    <button type="button" id="mobile-menu-button" class="bg-rose-50 inline-flex items-center justify-center p-2 rounded-md text-rose-600 hover:text-white hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-rose-100 focus:ring-white">
-                        <i data-feather="menu"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile menu -->
-        <div class="md:hidden hidden" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="index.html" class="mobile-nav-link text-gray-700 hover:bg-rose-50 hover:text-rose-600 block px-3 py-2 rounded-md text-base font-medium">Accueil</a>
-                <a href="services.html" class="mobile-nav-link text-gray-700 hover:bg-rose-50 hover:text-rose-600 block px-3 py-2 rounded-md text-base font-medium">Services</a>
-                <a href="about.html" class="mobile-nav-link text-gray-700 hover:bg-rose-50 hover:text-rose-600 block px-3 py-2 rounded-md text-base font-medium">À propos</a>
-                <a href="contact.html" class="mobile-nav-link text-gray-700 hover:bg-rose-50 hover:text-rose-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-                <a href="login.html" class="mobile-nav-link text-gray-700 hover:bg-rose-50 hover:text-rose-600 block px-3 py-2 rounded-md text-base font-medium">Connexion</a>
-                <a href="contact.html#rdv" class="btn-primary text-white block px-3 py-2 rounded-md text-base font-medium text-center my-2">
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Jeni Rose Couture</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Accueil</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="about.html" class="nav-link">À propos</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="btn btn-primary">
+                    <i data-feather="calendar"></i>
                     Prendre RDV
                 </a>
             </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html" class="mobile-nav-link active">Accueil</a>
+            <a href="services.html" class="mobile-nav-link">Services</a>
+            <a href="about.html" class="mobile-nav-link">À propos</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <a href="contact.html" class="btn btn-primary">Prendre RDV</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-r from-rose-600 to-pink-600 text-white overflow-hidden">
-        <div class="absolute inset-0 bg-black opacity-20"></div>
-        <div class="max-w-7xl mx-auto">
-            <div class="relative z-10 py-20 md:py-28 px-4 sm:px-6 lg:px-8">
-                <div class="md:flex md:items-center md:justify-between">
-                    <div class="md:w-1/2">
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                            <span class="block">Jeni Rose Couture</span>
-                            <span class="block text-rose-100">Création & Retouche</span>
-                        </h1>
-                        <p class="text-xl md:text-2xl text-rose-100 mb-8 max-w-xl">
-                            L'élégance sur mesure à Pertuis. Création, retouche et transformation de vos vêtements avec passion.
-                        </p>
-                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                            <a href="services.html" class="btn-primary bg-white text-rose-600 hover:bg-rose-50 text-center">
-                                Découvrir nos services
-                            </a>
-                            <a href="contact.html#rdv" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-rose-600 rounded-full px-6 py-3 font-medium text-center transition duration-300">
-                                Prendre RDV
-                            </a>
-                        </div>
-                    </div>
-                    <div class="md:w-1/2 mt-10 md:mt-0">
-                        <div class="relative">
-                            <div class="absolute -inset-4 bg-rose-400 rounded-lg transform rotate-3 opacity-30"></div>
-                            <img class="relative rounded-lg shadow-2xl" src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Atelier de couture">
-                        </div>
-                    </div>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    L'élégance
+                    <span class="highlight">sur mesure</span>
+                </h1>
+                <p>Création, retouche et transformation de vos vêtements avec passion. À Pertuis, découvrez un atelier où chaque pièce devient unique.</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn btn-primary">
+                        <i data-feather="scissors"></i>
+                        Découvrir nos services
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">
+                        Prendre RDV
+                    </a>
                 </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&q=80" alt="Atelier de couture">
             </div>
         </div>
-        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-rose-50 to-transparent"></div>
     </section>
 
-    <!-- Services Preview -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="text-rose-600 font-semibold tracking-wide uppercase">Nos Prestations</span>
-                <h2 class="mt-2 text-3xl md:text-4xl font-bold text-gray-900">Des services cousus main</h2>
-                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
-                    Chaque pièce est traitée avec le plus grand soin, dans le respect des techniques de haute couture.
-                </p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Nos Prestations</div>
+                <h2 class="section-title">Services cousus main</h2>
+                <p class="section-description">Chaque pièce est traitée avec le plus grand soin, dans le respect des techniques de haute couture.</p>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-rose-50 p-6 rounded-xl service-card">
-                    <div class="flex items-center justify-center w-12 h-12 bg-rose-100 text-rose-600 rounded-lg mb-4">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
                         <i data-feather="scissors"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Création sur mesure</h3>
-                    <p class="text-gray-600">
-                        Vêtements uniques conçus spécialement pour vous, selon vos mesures et votre style.
-                    </p>
+                    <h3 class="service-title">Création sur mesure</h3>
+                    <p class="service-description">Vêtements uniques conçus spécialement pour vous, selon vos mesures et votre style.</p>
                 </div>
-
-                <div class="bg-rose-50 p-6 rounded-xl service-card">
-                    <div class="flex items-center justify-center w-12 h-12 bg-rose-100 text-rose-600 rounded-lg mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
                         <i data-feather="settings"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Retouches vêtements</h3>
-                    <p class="text-gray-600">
-                        Ajustement, raccourcissement ou transformation de vos pièces préférées.
-                    </p>
+                    <h3 class="service-title">Retouches vêtements</h3>
+                    <p class="service-description">Ajustement, raccourcissement ou transformation de vos pièces préférées.</p>
                 </div>
-
-                <div class="bg-rose-50 p-6 rounded-xl service-card">
-                    <div class="flex items-center justify-center w-12 h-12 bg-rose-100 text-rose-600 rounded-lg mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
                         <i data-feather="zap"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Repassage professionnel</h3>
-                    <p class="text-gray-600">
-                        Pour des vêtements impeccables, comme neufs.
-                    </p>
+                    <h3 class="service-title">Repassage professionnel</h3>
+                    <p class="service-description">Pour des vêtements impeccables, comme neufs.</p>
                 </div>
-
-                <div class="bg-rose-50 p-6 rounded-xl service-card">
-                    <div class="flex items-center justify-center w-12 h-12 bg-rose-100 text-rose-600 rounded-lg mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
                         <i data-feather="package"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Boutonnement & Réparation</h3>
-                    <p class="text-gray-600">
-                        Remplacement de boutons, fermetures éclair et réparations diverses.
-                    </p>
+                    <h3 class="service-title">Réparation & Boutonnement</h3>
+                    <p class="service-description">Remplacement de boutons, fermetures éclair et réparations diverses.</p>
                 </div>
             </div>
-            
-            <div class="mt-12 text-center">
-                <a href="services.html" class="btn-primary inline-flex items-center">
+            <div class="section-cta">
+                <a href="services.html" class="btn btn-primary">
                     Voir tous nos services
-                    <i data-feather="arrow-right" class="ml-2"></i>
+                    <i data-feather="arrow-right"></i>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- About Preview -->
-    <section class="py-16 bg-rose-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
-                <div>
-                    <span class="text-rose-600 font-semibold tracking-wide uppercase">Notre histoire</span>
-                    <h2 class="mt-2 text-3xl md:text-4xl font-bold text-gray-900">Jeni Rose, créatrice passionnée</h2>
-                    <p class="mt-4 text-lg text-gray-600">
-                        Depuis plus de 15 ans, je mets mon savoir-faire et ma passion pour la couture au service de vos vêtements. Diplômée de l'École de la Chambre Syndicale de la Couture Parisienne, j'ai perfectionné mon art auprès des meilleurs artisans avant d'ouvrir mon atelier à Pertuis.
-                    </p>
-                    <div class="mt-6">
-                        <a href="about.html" class="text-rose-600 font-medium hover:text-rose-700 inline-flex items-center">
-                            En savoir plus sur mon parcours
-                            <i data-feather="arrow-right" class="ml-1"></i>
-                        </a>
-                    </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&q=80" alt="Jeni Rose">
                 </div>
-                <div class="mt-10 lg:mt-0">
-                    <div class="relative">
-                        <div class="absolute -inset-4 bg-rose-200 rounded-lg transform -rotate-3 opacity-50"></div>
-                        <img class="relative rounded-lg shadow-lg" src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Jeni Rose">
+                <div class="about-text">
+                    <div class="section-label">Notre histoire</div>
+                    <h2>Jeni Rose, créatrice passionnée</h2>
+                    <p>Depuis plus de 15 ans, je mets mon savoir-faire et ma passion pour la couture au service de vos vêtements. Ce qui a commencé comme un hobby est rapidement devenu une véritable vocation.</p>
+                    <p>Diplômée de l'École de la Chambre Syndicale de la Couture Parisienne, j'ai perfectionné mon art auprès des meilleurs artisans avant d'ouvrir mon atelier à Pertuis.</p>
+                    <div class="about-quote">
+                        <i data-feather="heart"></i>
+                        "La couture est un art, chaque vêtement une toile."
                     </div>
+                    <a href="about.html" class="btn btn-primary">En savoir plus</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="text-rose-600 font-semibold tracking-wide uppercase">Témoignages</span>
-                <h2 class="mt-2 text-3xl md:text-4xl font-bold text-gray-900">Ce que disent nos clientes</h2>
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Témoignages</div>
+                <h2 class="section-title">Ce que disent nos clientes</h2>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-rose-50 p-6 rounded-xl">
-                    <div class="flex items-center mb-4">
-                        <div class="flex-shrink-0">
-                            <div class="h-10 w-10 rounded-full bg-rose-200 flex items-center justify-center text-rose-700 font-bold">M</div>
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-sm font-medium text-gray-900">Marie D.</p>
-                            <div class="flex text-amber-400">
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <div class="testimonial-name">Marie D.</div>
+                            <div class="stars">★★★★★</div>
                         </div>
                     </div>
-                    <p class="text-gray-600">
-                        "Jeni a transformé ma robe préférée qui était trop grande en une pièce parfaitement ajustée. Un travail impeccable !"
-                    </p>
+                    <p class="testimonial-text">"Jeni a transformé ma robe préférée qui était trop grande en une pièce parfaitement ajustée. Un travail impeccable !"</p>
                 </div>
-                
-                <div class="bg-rose-50 p-6 rounded-xl">
-                    <div class="flex items-center mb-4">
-                        <div class="flex-shrink-0">
-                            <div class="h-10 w-10 rounded-full bg-rose-200 flex items-center justify-center text-rose-700 font-bold">S</div>
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-sm font-medium text-gray-900">Sophie L.</p>
-                            <div class="flex text-amber-400">
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                            </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <div class="testimonial-name">Sophie L.</div>
+                            <div class="stars">★★★★★</div>
                         </div>
                     </div>
-                    <p class="text-gray-600">
-                        "La robe de mariée que Jeni a créée pour moi était tout simplement parfaite. Une créatrice talentueuse et à l'écoute."
-                    </p>
+                    <p class="testimonial-text">"La robe de mariée que Jeni a créée pour moi était tout simplement parfaite. Une créatrice talentueuse et à l'écoute."</p>
                 </div>
-                
-                <div class="bg-rose-50 p-6 rounded-xl">
-                    <div class="flex items-center mb-4">
-                        <div class="flex-shrink-0">
-                            <div class="h-10 w-10 rounded-full bg-rose-200 flex items-center justify-center text-rose-700 font-bold">C</div>
-                        </div>
-                        <div class="ml-4">
-                            <p class="text-sm font-medium text-gray-900">Claire V.</p>
-                            <div class="flex text-amber-400">
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4 fill-current"></i>
-                                <i data-feather="star" class="w-4 h-4"></i>
-                            </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">C</div>
+                        <div>
+                            <div class="testimonial-name">Claire V.</div>
+                            <div class="stars">★★★★★</div>
                         </div>
                     </div>
-                    <p class="text-gray-600">
-                        "Service rapide et professionnel pour la réparation de plusieurs vêtements. Je recommande vivement !"
-                    </p>
+                    <p class="testimonial-text">"Service rapide et professionnel pour la réparation de plusieurs vêtements. Je recommande vivement !"</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-16 bg-gradient-to-r from-rose-600 to-pink-600 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Prêt à donner une seconde vie à vos vêtements ?</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">
-                Ou créer une pièce unique ? Prenez rendez-vous dès maintenant pour discuter de votre projet.
-            </p>
-            <a href="contact.html#rdv" class="btn-primary bg-white text-rose-600 hover:bg-rose-50 inline-flex items-center">
-                <i data-feather="calendar" class="mr-2"></i> Prendre RDV
+    <section id="contact" class="cta">
+        <div class="container">
+            <h2>Prêt à donner vie à votre projet ?</h2>
+            <p>Que ce soit pour une création sur mesure, une retouche ou un conseil, prenez rendez-vous dès maintenant.</p>
+            <a href="contact.html" class="btn btn-white">
+                <i data-feather="calendar"></i>
+                Prendre rendez-vous
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="md:col-span-2">
-                    <h3 class="text-2xl font-bold font-serif mb-4">Jeni Rose Couture</h3>
-                    <p class="text-gray-400 mb-4 max-w-md">
-                        Atelier de couture à Pertuis, spécialisé dans la création sur mesure, les retouches et transformations de vêtements.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i data-feather="facebook"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i data-feather="instagram"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i data-feather="mail"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <i data-feather="phone"></i>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Navigation</h4>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white">Accueil</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-white">À propos</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Informations</h4>
-                    <ul class="space-y-2">
-                        <li><a href="login.html" class="text-gray-400 hover:text-white">Connexion</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Mentions légales</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Politique de confidentialité</a></li>
-                    </ul>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Jeni Rose Couture</h3>
+                <p>Atelier de couture à Pertuis, spécialisé dans la création sur mesure, les retouches et transformations de vêtements.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i data-feather="facebook"></i></a>
+                    <a href="#" class="social-link"><i data-feather="instagram"></i></a>
+                    <a href="#" class="social-link"><i data-feather="mail"></i></a>
+                    <a href="#" class="social-link"><i data-feather="phone"></i></a>
                 </div>
             </div>
-            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-                <p>&copy; 2023 Jeni Rose Couture. Tous droits réservés.</p>
-                <p class="mt-2">Atelier de couture à Pertuis, France</p>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="services.html">Création sur mesure</a></li>
+                    <li><a href="services.html">Retouches</a></li>
+                    <li><a href="services.html">Repassage</a></li>
+                    <li><a href="services.html">Réparations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li>12 Rue des Tisserands</li>
+                    <li>84120 Pertuis, France</li>
+                    <li>+33 6 12 34 56 78</li>
+                    <li>contact@jenirosecouture.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Jeni Rose Couture. Tous droits réservés.</p>
         </div>
     </footer>
 
