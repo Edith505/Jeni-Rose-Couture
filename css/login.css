@@ -1,0 +1,131 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #1E2D40;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .container {
+      background-color: #233952;
+      width: 850px;
+      height: 500px;
+      border-radius: 25px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      display: flex;
+      overflow: hidden;
+    }
+
+    .left-panel, .right-panel {
+      flex: 1;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .left-panel {
+      background: linear-gradient(135deg, #1E2D40, #2f4b6b);
+      text-align: center;
+      color: #fff;
+    }
+
+    .left-panel h2 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .left-panel p {
+      font-size: 0.9rem;
+      color: #bcd0e0;
+    }
+
+    .right-panel h2 {
+      margin-bottom: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: .3rem;
+      color: #bcd0e0;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.7rem;
+      border-radius: 8px;
+      border: none;
+      background-color: #2e4764;
+      color: #fff;
+    }
+
+    input:focus {
+      outline: 2px solid #5db3ff;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 0.8rem;
+      background-color: #5db3ff;
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #7dc8ff;
+    }
+
+    .toggle {
+      margin-top: 1.2rem;
+      background: none;
+      border: none;
+      color: #5db3ff;
+      cursor: pointer;
+      font-size: 0.9rem;
+      text-decoration: underline;
+    }
+
+    /* Animation apparence */
+    .fade {
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 850px) {
+      .container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+      }
+
+      .left-panel {
+        display: none;
+      }
+
+      .right-panel {
+        width: 100%;
+        padding: 2rem;
+      }
+    }
