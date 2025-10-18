@@ -11,24 +11,24 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <link rel="stylesheet" href="css/dashboard.css">
 </head>
-<body class="bg-gradient-to-br from-rose-50 to-pink-100 min-h-screen">
+<body style="background: linear-gradient(to bottom right, var(--primary), var(--secondary));">
     <!-- Navigation Bar -->
     <nav class="bg-white shadow-lg fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-gradient-to-r from-rose-500 to-pink-500 rounded-full flex items-center justify-center">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background: linear-gradient(to right, var(--accent), var(--secondary));">
                         <i data-feather="scissors" class="text-white"></i>
                     </div>
-                    <span class="text-xl font-bold text-gray-800">Jeni Rose Couture</span>
+                    <span class="text-xl font-bold" style="color: var(--dark);">Jeni Rose Couture</span>
                 </div>
 
                 <!-- Search Bar -->
                 <div class="flex-1 max-w-2xl mx-4">
                     <div class="relative">
-                        <input type="text" placeholder="Rechercher..." class="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:border-transparent">
-                        <i data-feather="search" class="absolute left-3 top-2.5 text-gray-400"></i>
+                        <input type="text" placeholder="Rechercher..." class="w-full pl-10 pr-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:border-transparent" style="border-color: var(--light-gray); focus:ring-color: var(--accent);">
+                        <i data-feather="search" class="absolute left-3 top-2.5" style="color: var(--gray);"></i>
                     </div>
                 </div>
 
@@ -36,20 +36,20 @@
                 <div class="flex items-center space-x-4">
                     <div class="relative group">
                         <button class="flex items-center space-x-2 focus:outline-none">
-                            <img src="http://static.photos/people/200x200/1" alt="Admin" class="w-8 h-8 rounded-full border-2 border-rose-500">
-                            <span class="text-gray-700 font-medium">Admin</span>
-                            <i data-feather="chevron-down" class="text-gray-500"></i>
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Admin" class="w-8 h-8 rounded-full border-2" style="border-color: var(--accent);">
+                            <span class="font-medium" style="color: var(--dark);">Admin</span>
+                            <i data-feather="chevron-down" style="color: var(--gray);"></i>
                         </button>
                         <div class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block">
-                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-rose-50 hover:text-rose-600">
+                            <a href="#" class="block px-4 py-2 hover:bg-opacity-20 transition-colors" style="color: var(--dark); hover:background-color: var(--primary);">
                                 <i data-feather="user" class="w-4 h-4 mr-2 inline"></i>
                                 Profil
                             </a>
-                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-rose-50 hover:text-rose-600">
+                            <a href="#" class="block px-4 py-2 hover:bg-opacity-20 transition-colors" style="color: var(--dark); hover:background-color: var(--primary);">
                                 <i data-feather="settings" class="w-4 h-4 mr-2 inline"></i>
                                 Paramètres
                             </a>
-                            <a href="#" class="block px-4 py-2 text-red-600 hover:bg-red-50">
+                            <a href="index.html" class="block px-4 py-2 text-red-600 hover:bg-red-50">
                                 <i data-feather="log-out" class="w-4 h-4 mr-2 inline"></i>
                                 Déconnexion
                             </a>
@@ -66,35 +66,35 @@
         <div class="w-64 bg-white shadow-lg min-h-screen sidebar-transition">
             <nav class="mt-8 px-4">
                 <div class="space-y-2">
-                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-rose-600 bg-rose-50 rounded-lg">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg" style="color: var(--accent); background-color: var(--primary);">
                         <i data-feather="home" class="w-5 h-5"></i>
                         <span>Tableau de bord</span>
                     </a>
-                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors hover:bg-opacity-20" style="color: var(--gray);">
                         <i data-feather="calendar" class="w-5 h-5"></i>
                         <span>Rendez-vous</span>
                     </a>
-                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors" style="color: var(--gray);">
                         <i data-feather="mail" class="w-5 h-5"></i>
                         <span>E-mails</span>
                     </a>
-                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors" style="color: var(--gray);">
                         <i data-feather="shopping-bag" class="w-5 h-5"></i>
                         <span>Commandes</span>
                     </a>
-                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors" style="color: var(--gray);">
                         <i data-feather="users" class="w-5 h-5"></i>
                         <span>Utilisateurs</span>
                     </a>
-                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors" style="color: var(--gray);">
                         <i data-feather="briefcase" class="w-5 h-5"></i>
                         <span>Travaux</span>
                     </a>
-                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors" style="color: var(--gray);">
                         <i data-feather="dollar-sign" class="w-5 h-5"></i>
                         <span>Budget</span>
                     </a>
-                    <a href="#" class="flex items-center space-x-3 px-4 py-3 text-gray-600 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors">
+                    <a href="#" class="flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors" style="color: var(--gray);">
                         <i data-feather="truck" class="w-5 h-5"></i>
                         <span>Livraisons</span>
                     </a>
@@ -109,11 +109,11 @@
                 <div class="bg-white rounded-xl shadow-lg p-6 hover-scale transition-transform">
                     <div class="flex items-center justify-between">
                         <div>
-                            <p class="text-gray-500 text-sm">Rendez-vous du jour</p>
-                            <p class="text-2xl font-bold text-gray-800">12</p>
+                            <p class="text-sm" style="color: var(--gray);">Rendez-vous du jour</p>
+                            <p class="text-2xl font-bold" style="color: var(--dark);">12</p>
                         </div>
-                        <div class="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center">
-                            <i data-feather="calendar" class="text-rose-600"></i>
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background-color: var(--primary);">
+                            <i data-feather="calendar" style="color: var(--accent);"></i>
                         </div>
                     </div>
                 </div>
@@ -121,8 +121,8 @@
                 <div class="bg-white rounded-xl shadow-lg p-6 hover-scale transition-transform">
                     <div class="flex items-center justify-between">
                         <div>
-                            <p class="text-gray-500 text-sm">Nouveaux e-mails</p>
-                            <p class="text-2xl font-bold text-gray-800">8</p>
+                            <p class="text-sm" style="color: var(--gray);">Nouveaux e-mails</p>
+                            <p class="text-2xl font-bold" style="color: var(--dark);">8</p>
                         </div>
                         <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                             <i data-feather="mail" class="text-blue-600"></i>
@@ -133,8 +133,8 @@
                 <div class="bg-white rounded-xl shadow-lg p-6 hover-scale transition-transform">
                     <div class="flex items-center justify-between">
                         <div>
-                            <p class="text-gray-500 text-sm">Commandes en attente</p>
-                            <p class="text-2xl font-bold text-gray-800">5</p>
+                            <p class="text-sm" style="color: var(--gray);">Commandes en attente</p>
+                            <p class="text-2xl font-bold" style="color: var(--dark);">5</p>
                         </div>
                         <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
                             <i data-feather="shopping-bag" class="text-green-600"></i>
@@ -145,11 +145,11 @@
                 <div class="bg-white rounded-xl shadow-lg p-6 hover-scale transition-transform">
                     <div class="flex items-center justify-between">
                         <div>
-                            <p class="text-gray-500 text-sm">Revenus du mois</p>
-                            <p class="text-2xl font-bold text-gray-800">€3,240</p>
+                            <p class="text-sm" style="color: var(--gray);">Revenus du mois</p>
+                            <p class="text-2xl font-bold" style="color: var(--dark);">€3,240</p>
                         </div>
-                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                            <i data-feather="dollar-sign" class="text-purple-600"></i>
+                        <div class="w-12 h-12 rounded-lg flex items-center justify-center" style="background-color: var(--secondary);">
+                            <i data-feather="dollar-sign" style="color: var(--accent);"></i>
                         </div>
                     </div>
                 </div>
@@ -160,8 +160,8 @@
                 <!-- Revenue Chart -->
                 <div class="bg-white rounded-xl shadow-lg p-6">
                     <div class="flex justify-between items-center mb-6">
-                        <h3 class="text-lg font-semibold text-gray-800">Revenus mensuels</h3>
-                        <button class="text-rose-600 hover:text-rose-700">
+                        <h3 class="text-lg font-semibold" style="color: var(--dark);">Revenus mensuels</h3>
+                        <button style="color: var(--accent);">
                             <i data-feather="more-horizontal"></i>
                         </button>
                     </div>
@@ -173,19 +173,19 @@
                 <!-- Recent Activity -->
                 <div class="bg-white rounded-xl shadow-lg p-6">
                     <div class="flex justify-between items-center mb-6">
-                        <h3 class="text-lg font-semibold text-gray-800">Activité récente</h3>
-                        <button class="text-rose-600 hover:text-rose-700">
+                        <h3 class="text-lg font-semibold" style="color: var(--dark);">Activité récente</h3>
+                        <button style="color: var(--accent);">
                             <i data-feather="more-horizontal"></i>
                         </button>
                     </div>
                     <div class="space-y-4">
                         <div class="flex items-center space-x-3">
-                            <div class="w-8 h-8 bg-rose-100 rounded-full flex items-center justify-center">
-                                <i data-feather="user" class="text-rose-600 w-4 h-4"></i>
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center" style="background-color: var(--primary);">
+                                <i data-feather="user" class="w-4 h-4" style="color: var(--accent);"></i>
                             </div>
                             <div class="flex-1">
-                                <p class="text-sm text-gray-800">Nouveau client inscrit</p>
-                                <p class="text-xs text-gray-500">Il y a 2 minutes</p>
+                                <p class="text-sm" style="color: var(--dark);">Nouveau client inscrit</p>
+                                <p class="text-xs" style="color: var(--gray);">Il y a 2 minutes</p>
                             </div>
                         </div>
                         <div class="flex items-center space-x-3">
@@ -193,8 +193,8 @@
                                 <i data-feather="shopping-bag" class="text-green-600 w-4 h-4"></i>
                             </div>
                             <div class="flex-1">
-                                <p class="text-sm text-gray-800">Nouvelle commande #4589</p>
-                                <p class="text-xs text-gray-500">Il y a 15 minutes</p>
+                                <p class="text-sm" style="color: var(--dark);">Nouvelle commande #4589</p>
+                                <p class="text-xs" style="color: var(--gray);">Il y a 15 minutes</p>
                             </div>
                         </div>
                         <div class="flex items-center space-x-3">
@@ -202,8 +202,8 @@
                                 <i data-feather="mail" class="text-blue-600 w-4 h-4"></i>
                             </div>
                             <div class="flex-1">
-                                <p class="text-sm text-gray-800">E-mail important reçu</p>
-                                <p class="text-xs text-gray-500">Il y a 1 heure</p>
+                                <p class="text-sm" style="color: var(--dark);">E-mail important reçu</p>
+                                <p class="text-xs" style="color: var(--gray);">Il y a 1 heure</p>
                             </div>
                         </div>
                     </div>
@@ -212,13 +212,13 @@
 
             <!-- Quick Actions -->
             <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gradient-to-r from-rose-500 to-pink-500 rounded-xl shadow-lg p-6 text-white">
+                <div class="rounded-xl shadow-lg p-6 text-white" style="background: linear-gradient(to right, var(--accent), var(--secondary));">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="font-semibold">Ajouter un rendez-vous</h3>
                         <i data-feather="plus" class="w-5 h-5"></i>
                     </div>
-                    <p class="text-rose-100 text-sm mb-4">Planifier une nouvelle consultation</p>
-                    <button class="bg-white text-rose-600 px-4 py-2 rounded-lg font-medium hover:bg-rose-50 transition-colors">
+                    <p class="text-sm mb-4 opacity-90">Planifier une nouvelle consultation</p>
+                    <button class="bg-white px-4 py-2 rounded-lg font-medium transition-colors" style="color: var(--accent);">
                         Créer
                     </button>
                 </div>
@@ -234,20 +234,20 @@
                     </button>
                 </div>
 
-                <div class="bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl shadow-lg p-6 text-white">
+                <div class="rounded-xl shadow-lg p-6 text-white" style="background: linear-gradient(to right, var(--secondary), var(--primary));">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="font-semibold">Envoyer un e-mail</h3>
                         <i data-feather="mail" class="w-5 h-5"></i>
                     </div>
-                    <p class="text-purple-100 text-sm mb-4">Contacter les clients</p>
-                    <button class="bg-white text-purple-600 px-4 py-2 rounded-lg font-medium hover:bg-purple-50 transition-colors">
+                    <p class="text-sm mb-4 opacity-90">Contacter les clients</p>
+                    <button class="bg-white px-4 py-2 rounded-lg font-medium transition-colors" style="color: var(--accent);">
                         Écrire
                     </button>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <script src="javascript/dashboard.js"></script>
 </body>
 </html>

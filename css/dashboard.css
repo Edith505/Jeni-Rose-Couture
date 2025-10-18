@@ -1,4 +1,13 @@
-     .sidebar-transition {
+:root {
+            --primary: #f5e1e5;
+            --secondary: #d8a7b1;
+            --accent: #8b5e7a;
+            --white: #ffffff;
+            --dark: #2d1e38;
+            --gray: #6b7280;
+            --light-gray: #e5e7eb;
+        }
+        .sidebar-transition {
             transition: all 0.3s ease;
         }
         .hover-scale:hover {

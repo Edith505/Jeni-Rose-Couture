@@ -1,6 +1,5 @@
-    // Initialize Feather Icons
-        feather.replace();
-
+feather.replace();
+        
         // Revenue Chart
         const ctx = document.getElementById('revenueChart').getContext('2d');
         const revenueChart = new Chart(ctx, {
@@ -10,8 +9,8 @@
                 datasets: [{
                     label: 'Revenus (€)',
                     data: [3200, 2800, 3500, 4200, 3800, 4500, 5200, 4800, 5500, 6000, 5800, 6200],
-                    borderColor: '#ec4899',
-                    backgroundColor: 'rgba(236, 72, 153, 0.1)',
+                    borderColor: '#8b5e7a',
+                    backgroundColor: 'rgba(139, 94, 122, 0.1)',
                     tension: 0.4,
                     fill: true
                 }]
@@ -39,7 +38,7 @@
                 }
             }
         });
-
+        
         // Mobile menu toggle
         function toggleSidebar() {
             const sidebar = document.querySelector('.sidebar-transition');
