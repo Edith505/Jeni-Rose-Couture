@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body style="background: linear-gradient(to bottom right, var(--primary), var(--secondary));">
     <!-- Navigation Bar -->
@@ -18,16 +18,13 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background: linear-gradient(to right, var(--accent), var(--secondary));">
-                        <i data-feather="scissors" class="text-white"></i>
-                    </div>
                     <span class="text-xl font-bold" style="color: var(--dark);">Jeni Rose Couture</span>
                 </div>
 
                 <!-- Search Bar -->
                 <div class="flex-1 max-w-2xl mx-4">
                     <div class="relative">
-                        <input type="text" placeholder="Rechercher..." class="w-full pl-10 pr-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:border-transparent" style="border-color: var(--light-gray); focus:ring-color: var(--accent);">
+                        <input type="text" placeholder="Rechercher..." class="w-full pl-10 pr-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:border-transparent" style="border-color: var(--light-gray);">
                         <i data-feather="search" class="absolute left-3 top-2.5" style="color: var(--gray);"></i>
                     </div>
                 </div>
@@ -41,11 +38,11 @@
                             <i data-feather="chevron-down" style="color: var(--gray);"></i>
                         </button>
                         <div class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block">
-                            <a href="#" class="block px-4 py-2 hover:bg-opacity-20 transition-colors" style="color: var(--dark); hover:background-color: var(--primary);">
+                            <a href="#" class="block px-4 py-2 hover:bg-opacity-20 transition-colors">
                                 <i data-feather="user" class="w-4 h-4 mr-2 inline"></i>
                                 Profil
                             </a>
-                            <a href="#" class="block px-4 py-2 hover:bg-opacity-20 transition-colors" style="color: var(--dark); hover:background-color: var(--primary);">
+                            <a href="#" class="block px-4 py-2 hover:bg-opacity-20 transition-colors">
                                 <i data-feather="settings" class="w-4 h-4 mr-2 inline"></i>
                                 Paramètres
                             </a>
@@ -247,7 +244,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="javascript/dashboard.js"></script>
 </body>
 </html>
